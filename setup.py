@@ -109,7 +109,7 @@ def get_ext_modules():
     if DG_SKIP_CUDA_BUILD:
         return []
 
-    return [CUDAExtension(name='deep_gemm_cpp',
+    return [CUDAExtension(name='deep_gemm.deep_gemm_cpp',
                           sources=sources,
                           include_dirs=build_include_dirs,
                           libraries=build_libraries,
